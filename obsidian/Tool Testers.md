@@ -34,6 +34,6 @@
 1. **`terraform apply` sadcloud + a small VPC with flow logs → CloudWatch** — lights up ~8 collectors (S3, IAM, KMS, Secrets, EC2, SGs, flow logs) with realistic misconfigs.
 2. **Enable GuardDuty + Security Hub + Config + Macie**, run `create-sample-findings` and a Macie job — lights up the 4 detection collectors.
 3. **Run Stratus Red Team** — detonate `aws.exfiltration.ec2-share-ebs-snapshot`, `aws.persistence.iam-create-admin-user`, `aws.defense-evasion.cloudtrail-stop`. This generates CloudTrail/STS activity **and** real GuardDuty findings.
-4. **`harbor-collect aws --case CASE-LIVE-0001`** over that window → send me the `manifest.json` and we compare collected-vs-expected together.
+4. **`ventra-collect aws --case CASE-LIVE-0001`** over that window → send me the `manifest.json` and we compare collected-vs-expected together.
 
 The Stratus **`ec2-share-ebs-snapshot`** technique is your single highest-value test — it exercises exactly the shared-snapshot detection I rebuilt today with `DescribeSnapshotAttribute`.

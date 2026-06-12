@@ -6,62 +6,62 @@
   max-width: 100% !important;
 }
 
-.harbor-collectors table {
+.ventra-collectors table {
   width: 100%;
   max-width: 100%;
   table-layout: fixed;
 }
 
-.harbor-collectors th,
-.harbor-collectors td {
+.ventra-collectors th,
+.ventra-collectors td {
   vertical-align: top;
   word-wrap: break-word;
   overflow-wrap: anywhere;
   padding: 10px 12px;
 }
 
-.harbor-collectors th:nth-child(1),
-.harbor-collectors td:nth-child(1) {
+.ventra-collectors th:nth-child(1),
+.ventra-collectors td:nth-child(1) {
   width: 13%;
 }
 
-.harbor-collectors th:nth-child(2),
-.harbor-collectors td:nth-child(2) {
+.ventra-collectors th:nth-child(2),
+.ventra-collectors td:nth-child(2) {
   width: 27%;
 }
 
-.harbor-collectors th:nth-child(3),
-.harbor-collectors td:nth-child(3) {
+.ventra-collectors th:nth-child(3),
+.ventra-collectors td:nth-child(3) {
   width: 27%;
 }
 
-.harbor-collectors th:nth-child(4),
-.harbor-collectors td:nth-child(4) {
+.ventra-collectors th:nth-child(4),
+.ventra-collectors td:nth-child(4) {
   width: 33%;
 }
 
-.harbor-cli table {
+.ventra-cli table {
   width: 100%;
   max-width: 100%;
   table-layout: fixed;
 }
 
-.harbor-cli th:nth-child(1),
-.harbor-cli td:nth-child(1) {
+.ventra-cli th:nth-child(1),
+.ventra-cli td:nth-child(1) {
   width: 35%;
 }
 
-.harbor-cli th:nth-child(2),
-.harbor-cli td:nth-child(2) {
+.ventra-cli th:nth-child(2),
+.ventra-cli td:nth-child(2) {
   width: 65%;
 }
 </style>
 
-All collectors currently implemented in Harbor (`harbor collect aws`). **Tier 1** runs in the baseline profile; **Tier 2** collectors are opt-in via extended profiles.
+All collectors currently implemented in Ventra (`ventra collect aws`). **Tier 1** runs in the baseline profile; **Tier 2** collectors are opt-in via extended profiles.
 
-**GUI panel names** match the Harbor Evidence Viewer sidebar unless noted.
+**GUI panel names** match the Ventra Evidence Viewer sidebar unless noted.
 
-<div class="harbor-collectors">
+<div class="ventra-collectors">
 
 ## Identity & Access
 
@@ -140,7 +140,7 @@ These collectors run by default on any unknown incident:
 
 ## CLI collector names
 
-<div class="harbor-cli">
+<div class="ventra-cli">
 
 | Name in this note | Collector flag |
 |-------------------|----------------|
@@ -167,7 +167,7 @@ These collectors run by default on any unknown incident:
 
 ## Planned (not yet implemented)
 
-Azure and GCP collectors are catalogued in Harbor for future phases. They are **not** registered in the collector yet.
+Azure and GCP collectors are catalogued in Ventra for future phases. They are **not** registered in the collector yet.
 
 ### Azure (planned)
 
